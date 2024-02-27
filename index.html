@@ -1,7 +1,103 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:blanchedalmond;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background: rgb(131,58,180);
+            background: linear-gradient(
+                90deg,
+                rgba(131,58,180,1)0%,
+                rgba(253,29,29,1)50%,
+                rgba(252,176,69,1)100%
+            );
+            padding: 20px
+        }
+        .headerContainer{
+            display: flex;
+        }
+        .imgProfile{
+            height: 150px;
+            width: 150px;
+            border: 5px solid white;
+            border-radius: 100%;
+            box-shadow: 4px 4px 10px 2px rgba(131,58,180,1);
+        }
+        .imgProfile:hover{
+            margin-left: -2px;
+
+        }
+        .holderImage{
+            flex: 1;
+            text-align: center;
+        }
+        .holderProfile{
+            flex: 2;
+            font-family: "Anta",'Courier New', Helvetica, sans-serif;
             
-        </body>
+            font-style: normal;
+            font-size: x-large;
+            
+        }
+        .titleProfile{
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px 10px 10px 0px;
+
+        }
+        .nameProfile{
+            font-family: "Anta",'Courier New', Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .button{
+            border: none;
+            padding: 5px 10px;
+            margin: 10px 10px 0px 0px;
+            font-family: "Anta",'Courier New', Courier, monospace, sans-serif;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            transition: all;
+            transition-duration: 1s;
+        }
+        .button.download{
+            background-color:bisque;
+            color: rgb(43,43,43);
+            cursor: pointer;
+        }
+        .button.hire{
+            background-color:aqua ;
+            color: black;
+            cursor: pointer;
+        }
+        .button:hover{
+            transform: scale(1.1);
+        }
+        
+    </style>
     </head>
+    <header>
+        <div class="headerContainer">
+            <div class="holderImage">
+                <img class="imgProfile" src="./boy22.jpg">
+            </div>
+            <div class="holderProfile">
+                <div class="nameProfile">Boy Novriyal</div>
+                <div class="titleProfile">Cloud Computing & Web Development</div>
+                <div>
+                    <button class="button download">Download CV</button>
+                    <button class="button hire">Hire Me</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
 </html>
